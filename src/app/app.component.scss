@@ -10,17 +10,21 @@ button{
 	color:white;
 }
 .navbar{
-	background-color:#006400;
-	padding: 20px;
+	background-color:darkcyan;
+	// padding: 20px;
 }
 .logo{
-	height:6vh;
-	margin-left: -4vw;
+	height:4vh;
+	// margin-left: -4vw;
 }
 
 .search{
 	width: 30vw;
 	margin-left: 7vw;
+}
+
+.nav-link{
+  font-size: medium;
 }
 
 .nav-link:hover{

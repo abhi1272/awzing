@@ -11,7 +11,7 @@ import { SharedService } from './modules/shared/services/shared.service'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'ePharmacy'
+  title = 'Awzing'
   user
   isCollapsed
   products = []
