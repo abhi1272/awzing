@@ -1,13 +1,9 @@
 import { Injectable } from '@angular/core';
 
-import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import { Observable, throwError } from 'rxjs';
-import { retry, catchError } from 'rxjs/operators';
+import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-
-// import {ToastrService } from 'ngx-toastr';
-
 
 @Injectable({
   providedIn: 'root'
@@ -41,47 +37,12 @@ export class ProductService {
     return myResponse
   }
 
-
   public sendEmail(emailBody) {
     console.log('send email api called')
     let myResponse = this._http.post(this.baseUrl + '/product/mail', emailBody, {
       headers: new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded')
     })
     return myResponse
-  }
-
-  // public handleError(error: HttpErrorResponse) {
-  //   let errorMessage = '';
-
-  //   if (error.error instanceof ErrorEvent) {
-  //     // client-side error
-  //     errorMessage = `Error: ${error.error.message}`;
-  //   } else {
-  //     // server-side error
-  //     errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
-
-
-  //   }
-  //   // this.Toastr.error('currectly not able to onnect to server: will be back soon');
-  //   //window.alert('currectly not able to onnect to server: will be back soon');
-  //   return throwError(errorMessage);
-  // }
-
-  public addPrescription(data): Observable<any>{
-    return this._http.post(this.baseUrl + '/medicine/prescription', data)
-  }
-
-
-  public getUser(uuid): any{
-    return this._http.get(this.baseUrl + `/user/profile/${uuid}`)
-  }
-
-  public updateUser(data): Observable<any>{
-    return this._http.patch(this.baseUrl + '/user/profile', data)
-  }
-
-  public downloadBill(data): Observable<any>{
-    return this._http.get(this.baseUrl + `/product/invoice?data=${JSON.stringify(data)}`, {observe: 'response', responseType: 'blob'})
   }
 
 }

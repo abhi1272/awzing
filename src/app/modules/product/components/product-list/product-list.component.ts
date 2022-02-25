@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core'
-import { SharedService } from 'src/app/modules/shared/services/shared.service'
 
 @Component({
   selector: 'app-product-list',
@@ -8,21 +7,10 @@ import { SharedService } from 'src/app/modules/shared/services/shared.service'
 })
 export class ProductListComponent implements OnInit {
 
-  constructor(public sharedService: SharedService) { }
+  constructor() { }
   configData
 
   ngOnInit(): void {
-    this.sharedService.roleName = 'Medicine'
-    this.getConfigData()
-  }
-
-  getConfigData(): void {
-    this.sharedService.getTableConfig('medicine').subscribe((data) => {
-      console.log(data)
-      this.configData = data.data[0]
-    }, (error) => {
-      console.log(error)
-    })
   }
 
 }

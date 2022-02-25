@@ -16,17 +16,13 @@ import { AuthModule } from './modules/auth/auth.module'
 import { ProductModule } from './modules/product/product.module'
 import { ContactComponent } from './components/contact/contact.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FileUploaderComponent } from './modules/shared/modals/file-uploader/file-uploader.component'
 import { NgxImageCompressService } from 'ngx-image-compress'
-import { SharedModule } from './modules/shared/shared.module';
-import { CoreModule } from './modules/core/core.module';
 import { AutocompleteLibModule } from 'angular-ng-autocomplete'
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ContactComponent,
-    FileUploaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,8 +33,6 @@ import { AutocompleteLibModule } from 'angular-ng-autocomplete'
     HttpClientModule,
     AuthModule,
     ProductModule,
-    SharedModule,
-    CoreModule,
     AutocompleteLibModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule,

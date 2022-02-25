@@ -1,242 +1,79 @@
-
-.card{
-  margin-bottom: 4vh;
-  padding: 10px;
-  height: 40vh
-}
-.prod{
-  width: 100%;
-  height: 36vh;
-}
-.head{
-   color: grey;
-}
-.ourProduct{
-  text-decoration: underline;
-  color: green;
-}
-.quote{
-  font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #556B2F;
-}
-
-
-/*=============================================================
-  Authour URI: www.binarytheme.com
-  License: Commons Attribution 3.0
-  http://creativecommons.org/licenses/by/3.0/
-  100% To use For Personal And Commercial Use.
-  IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-
-  ========================================================  */
-
-
-
-
-
-/*=======================================
-  GENERAL STYLES
-==================================================*/
 body {
-  font-family:'Open Sans', sans-serif;
-font-size:14px;
+  font-family: 'lato', sans-serif;
+}
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-
-.text-center {
-text-align:center;
+h2 {
+  font-size: 26px;
+  margin: 20px 0;
+  text-align: center;
+  small {
+    font-size: 0.5em;
+  }
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-font-family:'Open Sans', sans-serif;
-}
-.alg-right-pad {
-float:right;
-padding-right:20px;
-}
-a:hover {
-text-decoration:none;
-}
-
-/*=======================================
-NAVBAR ADJUSTMENTS
-==================================================*/
-.navbar-brand {
-font-size: 25px;
-padding: 15px 80px 15px 60px;
-}
-.navbar-default .navbar-brand {
-color: #000000;
-}
-.navbar-default {
-background-color: #000000;
-border-color: #000000;
-}
-.navbar {
-border-radius: 0px;
-}
-.navbar-default .navbar-nav > li > a {
-color: #FFF;
-}
-.navbar-default .navbar-nav > li > a:hover {
-color: #FFF;
-}
-
-.navbar-default .navbar-brand {
-color: #FFFFFF;
-}
-.navbar-default .navbar-brand:hover {
-color: #FFFFFF;
-}
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-color: #050505;
-background-color: #FFFFFF;
-}
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-color: #000;
-}
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-color: #000;
-}
-/*=======================================
-BOOTSTRAP ADJUSTMENTS
-==================================================*/
-.row {
-margin-bottom:10px;
-}
-.btn {
-margin-bottom:5px;
-}
-/*=======================================
-INDEX PAGE
-==================================================*/
-
-.box-border {
-border:1px solid #e1e1e1;
-}
-
-.product-box h3>a,.product-box h3>a:hover,.product-box h3>a:focus {
-color:#000;
-text-decoration:none;
-}
-
-.offer-box {
-background-color: #6A75F0;
-border: 1px solid #096FC0;
-color: #fff;
-font-weight: 900;
-font-size:16px;
-}
-.offer-box a {
-color: #fff;
-text-decoration: none;
-font-size: 16px;
-font-weight: normal;
-}
-.offer-box a:hover {
-color:#000;
-}
-.list-group a {
-
-font-size:14px;
-font-weight:900;
-color:#808080;
-}
-.list-group a:hover {
-color:#000;
-text-decoration:none;
-}
-.offer-colors {
-background-color: #B05FDD;
-border: 1px solid #A228F3;
-}
-
-.download-app-box {
-background-color: #069E98;
-border: 1px solid #0FAA8B;
-padding:30px;
-line-height:40px;
-font-size:25px;
-font-weight:900;
-color:#fff;
-}
-/*=======================================
-SLIDER main-style.css Changes
-==================================================*/
-.mi-slider {
-margin-top: 0px;
-}
-
-.offer-text
-{
-position: absolute;
-color: #FFF;
-padding: 14px 16px 12px 16px;
-margin-top: 10px;
-background-color:#18b424;
-
-}
-.offer-text2
-{
-position: absolute;
-color: #FFF;
-padding: 14px 16px 12px 16px;
-margin-top: 10px;
-background-color:#EB0429;
-
-}
-/*=======================================
-FOOTER SECTION
-==================================================*/
-.footer-box {
-background-color:#F5F5F5;
-padding:20px 50px 20px 50px;
-
-
-}
-.small-box {
-font-size:10px;
-}
-
-.footer-box a {
-color:#808080;
-text-decoration:none;
-}
-.footer-box a:hover {
-color:#000;
-}
-.pad-botom {
-padding-bottom:30px;
-}
-.footer-box p {
-padding-top:15px;
-padding-bottom:15px;
-line-height:25px;
-}
-.social-box a{
-color:#333436;
-text-decoration:none;
-}
-
-.end-box {
-padding:20px;
-color:#fff;
-background-color:#000;
-font-size:14px;
-}
-
-.example-card {
-  max-width: 400px;
-}
-
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
-
-
-.align-cat{
-  display: inline-flex !important;
-  flex-direction: column !important;
+.responsive-table {
+  li {
+    border-radius: 3px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .table-header {
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+  }
+  .col-1 {
+    flex-basis: 10%;
+  }
+  .col-2 {
+    flex-basis: 40%;
+  }
+  .col-3 {
+    flex-basis: 25%;
+  }
+  .col-4 {
+    flex-basis: 25%;
+  }
+  
+  @media all and (max-width: 767px) {
+    .table-header {
+      display: none;
+    }
+    .table-row{
+      
+    }
+    li {
+      display: block;
+    }
+    .col {
+      
+      flex-basis: 100%;
+      
+    }
+    .col {
+      display: flex;
+      padding: 10px 0;
+      &:before {
+        color: #6C7A89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+      }
+    }
+  }
 }
