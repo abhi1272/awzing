@@ -37,6 +37,11 @@ export class ProductService {
     return myResponse
   }
 
+  public getProductList(): Observable<any> {
+    const productJson = 'assets/products.json'
+    return this._http.get(productJson)
+  }
+
   public sendEmail(emailBody) {
     console.log('send email api called')
     let myResponse = this._http.post(this.baseUrl + '/product/mail', emailBody, {

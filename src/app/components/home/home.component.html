@@ -35,7 +35,7 @@
     </div>
     <div class="about col-md-6">
       <h3 style="color:green">Welcome to Awzing Heathcare pvt. ltd.</h3>
-        <p>Awzing Heathcare pvt. ltd. is a pharmaceutical company headquartered at Panchkula(HR). Our main activities are focused on to improve the quality of life by providing better health services by developing and marketing quality and proprietary pharmaceutical product.
+        <p>Awzing Healthcare pvt. ltd. is a pharmaceutical company headquartered at Panchkula(HR). Our main activities are focused on to improve the quality of life by providing better health services by developing and marketing quality and proprietary pharmaceutical product.
         Every molecule here is researched to trace the soul of happiness. Our significant achievements during the last few years have helped us build an Organization and infrastructure that has led Awzing to spread its wings. </p>
         <p>At Awzing, New and innovative business models are in motion to make the most of emerging opportunities. We aim to market high quality and affordable pharmaceuticals to be made available everywhere, everyday.</p>
         <div class="readMore"> <a routerLink="/about" class="btn">Read More</a></div>
@@ -43,39 +43,29 @@
   </div>
   <p class="ourProduct">Our Products</p>
 
-  <div class="row">
-    <div class="col-lg-4 col-sm-6 portfolio-item">
-      <div class="card">
-        <a href="#"><img class="card-img-top" src="./assets/img/logos/5.JPG" alt=""></a>
-        <h4 class="card-title text-center">
-          <a href="#">Pantozing-DSR</a>
-        </h4>
+  <!-- <div class="row">
+    <div class="mb-4">
+      <div >
+        <img *ngFor="let img of productList;let i = index"
+          src='../../../assets/img/product_list/File {{i+1}}.jpeg'
+          class="col-sm-3 w-100 shadow-1-strong rounded mb-4"
+          alt="Boat on Calm Water"
+        />
       </div>
     </div>
+</div> -->
 
-    <div class="col-lg-4 col-sm-6 portfolio-item">
-      <div class="card">
-        <a href="#"><img class="card-img-top" src="./assets/img/logos/2.JPG" alt=""></a>
-        <h4 class="card-title text-center">
-          <a href="#">Zawinac-P</a>
-        </h4>
-      </div>
-    </div>
+<div class="wrapper">
+  <owl-carousel-o [options]="customOptions">
 
-    <div class="col-lg-4 col-sm-6 portfolio-item">
-      <div class="card">
-        <a href="#"><img class="card-img-top" src="./assets/img/logos/4.JPG" alt=""></a>
-        <h4 class="card-title text-center">
-          <a href="#">Zawinac-SP</a>
-        </h4>
-      </div>
-    </div>
-  </div>
-  <div>Some tags before</div>
-  <div>Some tags after</div>
+    <ng-container *ngFor="let slide of productList;let i = index">
+      <ng-template class="slide" carouselSlide [id]="i+1">
+        <img style="width: 95%;" src="../../../assets/img/product_list/File {{i+1}}.jpeg">
+      </ng-template>
+    </ng-container>
+
+  </owl-carousel-o>  
 </div>
-
-
 
 
 

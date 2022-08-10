@@ -1,0 +1,71 @@
+[{
+    "Product_Name" : "ZAWINAC P",
+    "COMPOSITION": "Aceclofenac 100 mg + paracetamol 325 mg (BLISTER)",
+    "PACK": "10X10",
+    "MRP" : 550.0,
+    "TYPE": "Tablets"
+},
+{
+    "Product_Name" : "ZAWINAC SP",
+    "COMPOSITION": "Aceclofenac 100 mg + paracetamol 325mg + serratiopeptidase 15 mg( ALU ALU)",
+    "PACK": "10X10",
+    "MRP" : 950.0,
+    "TYPE": "Tablets"
+},
+{
+    "Product_Name" : "ZINGFLOX 200",
+    "COMPOSITION": "Ofloxacin 200 mg(ALU ALU)",
+    "PACK": "10X10",
+    "MRP" : 650.0,
+    "TYPE": "Tablets"
+},
+{
+    "Product_Name" : "AWZOVIT TAB",
+    "COMPOSITION": "MULTIVITAMINS AND MULTIMINERALS TAB",
+    "PACK": "10X10",
+    "MRP" : 800.0,
+    "TYPE": "Tablets"
+},
+{
+    "Product_Name" : "AWCET L TAB",
+    "COMPOSITION": "LEVOCETIRIZINE 5MG+MONTELUKAST 10 MG TAB",
+    "PACK": "10X10",
+    "MRP" : 1000.0,
+    "TYPE": "Tablets"
+},
+{
+    "Product_Name" : "ZAWINAC MR TAB",
+    "COMPOSITION": "ACECLOFENAC 100MG +PARACETAMO325 MG + CHLOZOXZONE 250MG",
+    "PACK": "10X10",
+    "MRP" : 900.0,
+    "TYPE": "Tablets"
+},
+{
+    "Product_Name" : "ZINGFLOX OZ TAB",
+    "COMPOSITION": "Ofloxacin 200 mg+ORNIDAZOL 500MG",
+    "PACK": "10X10",
+    "MRP" : 980.0,
+    "TYPE": "Tablets"
+},
+{
+    "Product_Name" : "ZINGOFLAM PLUS TAB",
+    "COMPOSITION": "NIMUSULIDE 100MG +PARACETAMOL 325MG",
+    "PACK": "20X10",
+    "MRP" : 1200.0,
+    "TYPE": "Tablets"
+},
+{
+    "Product_Name" : "AWZOVIT G CAP",
+    "COMPOSITION": "GINSENG+MULITIVITAMINS+MINERALS SOFT GEL",
+    "PACK": "10X10",
+    "MRP" : 990,
+    "TYPE": "SOFTGEL CAP"
+},
+{
+    "Product_Name" : "AWZOVIT GOLD CAP",
+    "COMPOSITION": "ALPHA LIPOIC ACID+GINGO BILOBA - CYNOCOBALAMIN + MAGNESIUM +ZINC+VIT.B6",
+    "PACK": "10X10",
+    "MRP" : 2090,
+    "TYPE": "SOFTGEL CAP"
+}
+]

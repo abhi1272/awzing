@@ -1,15 +1,18 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
     <div class="container navbar-inner">
         <a class="navbar-brand img-fluid" routerLink="/home"><img class="logo img-responsive" src="../../assets/img/logos/logo_1.png" alt="" routerLink="/home" style=" margin-right: 10px;"></a>
-
         <button class="navbar-toggler navbar-toggler-right" type="button" (click)="isCollapsed = !isCollapsed" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
         <div class="navbar-collapse collapse" [attr.aria-expanded]="!isCollapsed" [ngClass]="{collapse: !isCollapsed}">
+            <div class="contact"><span class="material-icons">
+                call
+                </span> 9135048439
+            </div>
             <ul class="nav navbar-nav ml-auto mt-2" (click)="isCollapsed = !isCollapsed">
                 <li class="nav-item" ><a class="nav-link font-weight-bold" routerLinkActive="active" routerLink="/home">Home</a></li>
                 <li class="nav-item"><a class="nav-link font-weight-bold" routerLinkActive="active" routerLink="/product">Product</a></li>
-                <li class="nav-item" ><a class="nav-link font-weight-bold" routerLinkActive="active" routerLink="/contact">Contact</a></li>
+                <li class="nav-item" ><a class="nav-link font-weight-bold" routerLinkActive="active" routerLink="/folder">Folder</a></li>
                 <li class="nav-item" ><a class="nav-link font-weight-bold" routerLinkActive="active" routerLink="/contact">Enquiry</a></li>
             </ul>
         </div>

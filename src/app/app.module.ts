@@ -18,6 +18,8 @@ import { ContactComponent } from './components/contact/contact.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxImageCompressService } from 'ngx-image-compress'
 import { AutocompleteLibModule } from 'angular-ng-autocomplete'
+import { CarouselModule } from 'ngx-owl-carousel-o'
+import { RouterModule } from '@angular/router'
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +38,8 @@ import { AutocompleteLibModule } from 'angular-ng-autocomplete'
     AutocompleteLibModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule,
+    RouterModule,
+    CarouselModule,
     ToastrModule.forRoot()
   ],
   providers: [
