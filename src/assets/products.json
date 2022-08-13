@@ -67,5 +67,117 @@
     "PACK": "10X10",
     "MRP" : 2090,
     "TYPE": "SOFTGEL CAP"
+},
+{
+    "Product_Name" : "PANTOZING DSR",
+    "COMPOSITION": "Pantoprazol 40mg + domeperidome 30mg (sX ALU ALU)",
+    "PACK": "10X10",
+    "MRP" : 1200,
+    "TYPE": "SOFTGEL CAP"
+},
+{
+    "Product_Name" : "ZINGOFOLVIN CAP",
+    "COMPOSITION": "carbonyl iron 100mg +zinc sulphate monohydrate 22.5 mg (BLISTERX)",
+    "PACK": "3x10x5",
+    "MRP" : 1050,
+    "TYPE": "SOFTGEL CAP"
+},
+{
+    "Product_Name" : "PANTOZING LSR",
+    "COMPOSITION": "PANTOPRAZOL 40MG +LEVOSULPIRIDE 75MG",
+    "PACK": "10x10",
+    "MRP" : 1500,
+    "TYPE": "SOFTGEL CAP"
+},
+{
+    "Product_Name" : "ZINGOFOLVIN SY",
+    "COMPOSITION": "zinc sulphate 7 mg + pyridoxine hydrochloride 1.5 mg + sorbitol 750 mg",
+    "PACK": "300ML",
+    "MRP" : 175,
+    "TYPE": "SYRUPS"
+},
+{
+    "Product_Name" : "AWZOVIT SY",
+    "COMPOSITION": "MULITIVITAMIN MULTIMINERALS WITH IRON SY",
+    "PACK": "100ML",
+    "MRP" : 72,
+    "TYPE": "SYRUPS"
+},
+{
+    "Product_Name" : "ZINGCOF SY",
+    "COMPOSITION": "AMBROXOL HCL GUAIPHENESIN TERBUTALINE SUPLHATE AND MENTHOL",
+    "PACK": "100ML",
+    "MRP" : 90,
+    "TYPE": "SYRUPS"
+},
+{
+    "Product_Name" : "ZINGCOF LS SY",
+    "COMPOSITION": "OSALBUTAMOL SUPLPHATE AMBROXOL HYDROCHLORIDE GUAIPHENESINE AND MENTHOL",
+    "PACK": "300ML",
+    "MRP" : 85,
+    "TYPE": "SYRUPS"
+},
+{
+    "Product_Name" : "ZAWINAC P SY",
+    "COMPOSITION": "ACECLOFENAC 50MG + PARACETAMOL 125MG",
+    "PACK": "60ML",
+    "MRP" : 52,
+    "TYPE": "SYRUPS"
+},
+{
+    "Product_Name" : "ZINGCOF DX SY",
+    "COMPOSITION": "DEXTROMETHORPHAN HYDROCHLO 10MG + CHLORHPHENIRAMINE MALEATE 2MG 100ML 98.0 29.0 PHENYLEPHRINE HCL 5MG",
+    "PACK": "100ML",
+    "MRP" : 98,
+    "TYPE": "SYRUPS"
+},
+{
+    "Product_Name" : "AWCEF SB 1.5 GM",
+    "COMPOSITION": "CEFTRIAXONE 1000MG + SULBACTAM 500MG",
+    "PACK": "1.5GM",
+    "MRP" : 170,
+    "TYPE": "INJECTION"
+},
+{
+    "Product_Name" : "ZIMICOB PLUS",
+    "COMPOSITION": "Methylcobalamin 1000mcg + nicotinamide 100 mg + pyridoxine hcl 100mg",
+    "PACK": "2ML",
+    "MRP" : 40,
+    "TYPE": "INJECTION"
+},
+{
+    "Product_Name" : "ZIMICOB 1500",
+    "COMPOSITION": "METHYCOBALAMINE 1500MCG",
+    "PACK": "2ML",
+    "MRP" : 58,
+    "TYPE": "INJECTION"
+},
+{
+    "Product_Name" : "ZIMICOB 2500",
+    "COMPOSITION": "Methylcobalamin 2500 mcg + benzyle alcohol 2.0%",
+    "PACK": "2ML",
+    "MRP" : 80,
+    "TYPE": "INJECTION"
+},
+{
+    "Product_Name" : "COLOZING DROP",
+    "COMPOSITION": "SIMETHICONE (ACTIVATED DIMETHICONE ) WITH DILL OIL AND FENNEL OIL DROPS ",
+    "PACK": "30ML",
+    "MRP" : 78.9,
+    "TYPE": "DROP"
+},
+{
+    "Product_Name" : "NIROZYME",
+    "COMPOSITION": "Each ml Contains : ALPHA AMYLASE 20MG papain 10mg dill oil 2mg anise oil 2mg",
+    "PACK": "30ML",
+    "MRP" : 90,
+    "TYPE": "DROP"
+},
+{
+    "Product_Name" : "ZINGPOD DRY SY",
+    "COMPOSITION": "CEFPODOXIME ORAL SUSPENSION 50MG DRY SY",
+    "PACK": "50 MG",
+    "MRP" : 95,
+    "TYPE": "DRY SY"
 }
 ]

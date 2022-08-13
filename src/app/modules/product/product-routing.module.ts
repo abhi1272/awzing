@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core'
 import { Routes, RouterModule } from '@angular/router'
 import { AuthGuard } from 'src/app/guards/auth.guard'
+import { ProductFolderComponent } from './components/product-folder/product-folder.component'
 import { ProductListComponent } from './components/product-list/product-list.component'
 import { ProductViewComponent } from './components/product-view/product-view.component'
 import { ProductComponent } from './product.component'
@@ -13,6 +14,11 @@ const routes: Routes = [
   {
     path: 'product-list',
     component: ProductListComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'folder',
+    component: ProductFolderComponent,
     canActivate: [AuthGuard]
   },
   {

@@ -6,7 +6,8 @@ import { RouterModule } from '@angular/router'
 import { ProductListComponent } from './components/product-list/product-list.component'
 import { ProductViewComponent } from './components/product-view/product-view.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-import { AngularMaterialModule } from '../material/angular-material.module'
+import { AngularMaterialModule } from '../material/angular-material.module';
+import { ProductFolderComponent } from './components/product-folder/product-folder.component'
 
 
 
@@ -15,6 +16,7 @@ import { AngularMaterialModule } from '../material/angular-material.module'
     ProductComponent,
     ProductListComponent,
     ProductViewComponent,
+    ProductFolderComponent,
   ],
   imports: [
     CommonModule,

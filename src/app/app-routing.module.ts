@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component'
 import { LoginComponent } from './modules/auth/components/login/login.component'
 import { RegisterComponent } from './modules/auth/components/register/register.component'
 import { ResetPasswordComponent } from './modules/auth/components/reset-password/reset-password.component'
+import { ProductFolderComponent } from './modules/product/components/product-folder/product-folder.component'
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'product',
     loadChildren: () => import('./modules/product/product.module').then(m => m.ProductModule)
+  },
+  {
+    path: 'product-folder',
+    component: ProductFolderComponent
   },
   {
     path: 'login',
