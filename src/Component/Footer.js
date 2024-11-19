@@ -1,27 +1,28 @@
 import React from "react";
 import '../Style.css'
 import logo from '../Imgs/logoAwzing.png'
-
+import MedicationIcon from '@mui/icons-material/ArrowRight';
+import CallIcon from '@mui/icons-material/Call';
 const Footer = ()=>{
     return <div className="footerMain">
        <div className="webDetailsDev">
        <img src={logo} width={200}/>
        <div className="webDetails">
         <p>Working together for a healthier world.</p>
-        <p>Mob No. 9135048439</p>
+        <p><CallIcon style={{fontSize:12}}/> 9135048439</p>
        </div>
        </div>
        <div className="listsDiv">
         <ul>
-            <li><a href="/">Home</a> </li>
-            <li>About Us</li>
-            <li>Contact Us</li>
+            <li><MedicationIcon style={{fontSize:12}}/><a href="/">Home</a> </li>
+            <li><MedicationIcon style={{fontSize:12}}/>About Us</li>
+            <li><MedicationIcon style={{fontSize:12}}/>Contact Us</li>
         </ul>
        </div>
        <div className="listsDiv">
        <ul>
-            <li>Products</li>
-            <li>Folder</li>
+            <li><MedicationIcon style={{fontSize:12}}/><a href="/all-products">Products</a></li>
+            <li> <MedicationIcon style={{fontSize:12}}/><a href="/folder">Folder</a></li>
             
         </ul>
        </div>

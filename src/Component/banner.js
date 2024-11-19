@@ -8,7 +8,7 @@ const Banner =({bannerTitle})=>{
     return  <div className= {isScreenSmall()? 'bannerMobile' :'banner'}>
     <div className= {isScreenSmall()? 'bannerOppMobile' :'bannerOpp'} >
     </div>
-    <h1 style={{marginLeft:"50px"}}> {bannerTitle} </h1>
+    <h1 style={{marginLeft:"50px",font:"1rem"}}> {bannerTitle} </h1>
 
 
 </div>

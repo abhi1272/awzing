@@ -3,7 +3,8 @@ import { useState } from "react";
 import '../Style.css'
 import Categories from "./Categories";
 import MenuIcon from '@mui/icons-material/Menu';
-
+import Logo from '../Imgs/logoAwzing.png'
+import CancelIcon from '@mui/icons-material/Cancel';
 
 const MobileMenu = ()=>{
     const [display,setDisplay] = useState(true)
@@ -62,13 +63,27 @@ const MobileMenu = ()=>{
                         position:"absolute",
                         top:"0px",
                         right:"0px",
-                        width:"40vw",
+                        width:"50vw",
                         height:"100vh",
-                        padding: "50px",
-                        backgroundColor:"whitesmoke",  
+                        padding: "10px",
+                        justifyItems:"center",
+                        backgroundColor:"black",  
                         }}> 
-                    
-                       <Categories color={"black"}/>
+                        <CancelIcon onClick={()=>onClickMenu()} style={{color:"white"}}/>
+
+                         <img style={{zIndex:"12000",
+                            width:200,
+                            height:100
+                            }} src={Logo}/>
+                       <hr class="dotted"/>
+                    <div style={{
+                    marginTop:"20px",
+                    width:"20vw",
+                    }}>
+                        
+                    <Categories color={"white"}/>
+                    </div>
+                     
                     </div>
             </div>
        

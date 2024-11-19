@@ -38,18 +38,7 @@ const Header = ()=>{
         <a href="/"> <img src={Logo} width={250}/></a> 
            
         {isScreenSmall()? <MobileMenu/> : <div className="menuItems">
-                                <button 
-                                style={{ 
-                                    margin:"10px",
-                                    cursor:"pointer",
-                                    border:"none",
-                                    fontWeight:"bold",
-                                    backgroundColor:"transparent",
-                                    color:"white",
-                                    fontSize:"1rem"
-                                }} 
-                                onClick={()=> navigate('/') }
-                                >HOME</button> 
+                               
                                 <Categories color={"white"}/>
                                
                                 

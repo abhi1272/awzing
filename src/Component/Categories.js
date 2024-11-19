@@ -23,9 +23,49 @@ const Categories = ({color})=>{
           navigate("/products", { state: { id,catname } })
           window.location.reload()
          }
+      
 
   return ( 
     <>
+     <button 
+      style={{ 
+       margin:"10px",
+       cursor:"pointer",
+       border:"none",
+       fontWeight:"bold",
+       backgroundColor:"transparent",
+       color: color,
+       fontSize:"1rem"
+     }} 
+     
+      onClick={()=> navigate("/")}
+      >Home</button> 
+       <button 
+      style={{ 
+       margin:"10px",
+       cursor:"pointer",
+       border:"none",
+       fontWeight:"bold",
+       backgroundColor:"transparent",
+       color: color,
+       fontSize:"1rem"
+     }} 
+     
+      onClick={()=> navigate("/all-products")}
+      >Products</button> 
+      <button 
+      style={{ 
+       margin:"10px",
+       cursor:"pointer",
+       border:"none",
+       fontWeight:"bold",
+       backgroundColor:"transparent",
+       color: color,
+       fontSize:"1rem"
+     }} 
+     
+      onClick={()=> navigate("/folder")}
+      >Folder</button> 
     {result.map(catt =>{
       return   <button 
       style={{ 

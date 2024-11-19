@@ -77,9 +77,33 @@
   }
   .carousel-image-home{
     min-width: 100%;
-    max-height: 90vh;
+    max-height: 80vh;
     border: 1px solid white;
     object-fit: fit;
    
   }
+  .carousel-image-home-mobile{
+    min-width: 100%;
+    max-height: 50vh;
+    border: 1px solid white;
+    object-fit: fit;
+  }
   
+
+  /* imgSlideBtn */
+
+  #imgSlideBtn{
+    background-color: rgba(0, 0, 0, 0.685);
+    border: none;
+    color:white;
+    justify-items: center;
+    align-items: center;
+    height: 100px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  #imgSlideBtn:hover{
+    transform: scale(90%);
+    color: aqua;
+  }

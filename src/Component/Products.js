@@ -65,16 +65,16 @@ const Product= ()=>{
         }
     return (
     <>
-    {loading? <LoadingT/> :
-    (<div className={isScreenSmall()? 'mainDivProductMobile'  : 'mainDivProduct'} >
+   
+    <div className={isScreenSmall()? 'mainDivProductMobile'  : 'mainDivProduct'} >
 
         <Banner bannerTitle= { dataSearch? result[0]? "Showing Product For " + dataSearch: dataSearch+" Not Available" : dataCatName }/>
-       
+        {loading? <LoadingT/> :
     <div  style={{justifyContent:"center"}} className= {isScreenSmall()? "allProductsShowMobile" :"allProductsShow"}>
     { !result[0]? <h3 style={{textAlign:"center"}}>No Product Available</h3> : catProduct()}
-   </div>
-    </div>)
-    }
+   </div>}
+    </div>
+    
     </>
     )
 }

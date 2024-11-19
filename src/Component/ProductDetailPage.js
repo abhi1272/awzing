@@ -7,6 +7,7 @@ import CategoriesCard from './CategoriesCard';
 import noImg from '../Imgs/noimagemed.jpg'
 import ContactBanner from './ContactBanner';
 import Banner from './banner';
+import CarouselHome from './CarouselHome';
 
 
 const ProductDetailPage = ()=>{
@@ -33,7 +34,7 @@ const ProductDetailPage = ()=>{
             const relateData = await fetcher(relatedProUrl)
              setResult (data.data.product)
              setrelatedPro (relateData.data.similarProducts)
-             setImagee (data.data.product.images[0])
+             setImagee (data.data.product.images)
              setSpecification(data.data.product.specifications)
              setCategory(data.data.product.category)
              setLoading(false);
@@ -68,14 +69,17 @@ const ProductDetailPage = ()=>{
     return (
 
       <>
-        {loading? <LoadingT/>: 
+       
         
-        (<div className={isScreenSmall()? 'mainDivProductMobile'  : 'mainDivProduct'} >
+        <div className={isScreenSmall()? 'mainDivProductMobile'  : 'mainDivProduct'} >
 
             <Banner bannerTitle={result? result.title:"Loading"}/>
+            {loading? <LoadingT/>: (
 <div className= {isScreenSmall()? 'productPageMobile':'productPage'}>
 <div className= {isScreenSmall()? 'productImgMobile':'productImg'}>
-    <img src= {imagee? imagee: noImg} alt='image'/>
+    {/* <img src= {imagee? imagee: noImg} alt='image'/> */}
+
+    <CarouselHome imgs={imagee}/>
 </div>
 <div className='productDetails'>
             <div className='productTitle'>
@@ -112,6 +116,7 @@ const ProductDetailPage = ()=>{
     
              </div>
         </div>
+        )}
         <ContactBanner/>
         <div className= {isScreenSmall()? 'productDescriptionMobile' :'productDescription'}>
         <h2>Product Description</h2>
@@ -125,7 +130,8 @@ const ProductDetailPage = ()=>{
 </div>
 </div>
 
-            </div>)}
+
+            </div>
    
     </>
     )
