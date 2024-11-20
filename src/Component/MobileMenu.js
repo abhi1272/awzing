@@ -75,7 +75,7 @@ const MobileMenu = ()=>{
                             width:200,
                             height:100
                             }} src={Logo}/>
-                       <hr class="dotted"/>
+                       <hr style={{class:"dotted"}} />
                     <div style={{
                     marginTop:"20px",
                     width:"20vw",

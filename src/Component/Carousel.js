@@ -51,15 +51,16 @@ const Carousel = () => {
   return (
   <>
      {loading? <LoadingT/> : 
-    <div className= {isSmallScreen()? "carousel-container-Mobile": "carousel-container"}>
+    <div   key="111" className= {isSmallScreen()? "carousel-container-Mobile": "carousel-container"}>
       <div
+      
         className="carousel"
         style={{ transform: `translateX(-${isSmallScreen()? currentIndex * 50:currentIndex * 10}%)` }}
       >
         {result.map((image, index) => (
-       <div className= {isSmallScreen()?"carousel-new-Mobile":"carousel-new"}>
+       <div key={index + 2} className= {isSmallScreen()?"carousel-new-Mobile":"carousel-new"}>
           <img
-            key={index}
+          
             src={image.images[0]}
             alt={`Slide ${index + 1}`}
             className={isSmallScreen()? "carousel-image-Mobile": "carousel-image"}

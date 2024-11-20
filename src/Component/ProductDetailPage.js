@@ -54,6 +54,7 @@ const ProductDetailPage = ()=>{
     const showRelatedProduct = ()=>{
         return relatedPro.map(related => 
         <CategoriesCard
+        key={related.uuid}
         id={related.uuid}
         catName={related.title}
         image={related.images[0]}
