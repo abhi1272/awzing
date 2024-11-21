@@ -44,19 +44,17 @@ const AllproductTable = ()=>{
 
     const renCatT = ()=>{
       
-        return result.map( cat => 
-         <AllProductCard 
-         key={cat.uuid} 
-         id={cat.uuid} 
-         catName={cat.title}
-         productDetail={cat.specifications ? cat.specifications.composition:""}
-         showBtn={false}
-         packing={cat.specifications ? cat.specifications.packing:""}
-         mrp={cat.specifications ? cat.price:""}
-
-         onCatClick={(id)=>openProduct(id,cat.name)}
-         />   
-        )
+        return result && result.map( (cat ,index) => (
+         
+            <tr key={index}>
+            <td>{index + 1}</td>
+            <td>{cat ? cat.title:""} </td>
+            <td>{cat.specifications ? cat.specifications.composition:""} </td>
+            <td>{cat.specifications ? cat.specifications.packing:""} </td>
+            <td>₹ {cat ?cat.price: ""} </td>
+           </tr>
+       
+        ));
     }
   
 
@@ -69,12 +67,28 @@ const AllproductTable = ()=>{
        <div style={{margin:"20px"}}>
       <Banner bannerTitle={"All Products"} />
       </div>
-        {loading? <LoadingT/>:  
-        <div 
-        style={{justifyContent:"center"}} 
-        className= {isScreenSmall()? "allCatCardMobile" :"allProductCatCard"}>
-        {renCatT()}
-         </div>}
+        {loading? <LoadingT/>: 
+             <div className='productDetailList'>
+                 { result && (
+             <table className='table table-striped  table-bordered '>
+                <thead className='tblHead'>
+                <tr className='thead'>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>COMPOSITION</th>
+                    <th>PACK</th>
+                    <th>MRP</th>
+                </tr>
+               </thead>
+               <tbody>
+             {renCatT()}
+              
+               </tbody>
+                </table>
+                )}
+                 </div>
+                 
+                 }
    
     </>
     )

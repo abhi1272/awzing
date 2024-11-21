@@ -14,14 +14,24 @@ const AllproductTable = ()=>{
     const navigate = useNavigate();
 
     const image =[ [ 
-        "https://plus.unsplash.com/premium_photo-1682089872205-dbbae3e4ba32?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1639829743267-cb0341cf341e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://plus.unsplash.com/premium_photo-1661304713898-b6980743aa2a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    ], [ 
-        "https://plus.unsplash.com/premium_photo-1682089872205-dbbae3e4ba32?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1639829743267-cb0341cf341e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://plus.unsplash.com/premium_photo-1661304713898-b6980743aa2a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    ]]
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder1.jpeg",
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder2.jpeg",
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder3.jpeg",
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder4.jpeg",
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder5.jpeg",
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder6.jpeg",
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder7.jpeg",
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder8.jpeg",
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder9.jpeg",
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder10.jpeg",
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder11.jpeg",
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder12.jpeg",
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder13.jpeg",
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder14.jpeg",
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder15.jpeg",
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder16.jpeg",
+        "https://www.awzinghealthcare.com/assets/img/product_folder/folder17.jpeg"
+    ],]
   
     const [result,setResult] = useState([])
     const [relatedPro,setrelatedPro] = useState([])

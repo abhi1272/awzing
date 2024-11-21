@@ -1,11 +1,30 @@
 import React from 'react'
+import { useState,useEffect } from 'react'
 import LoadingImg from '../Imgs/loading.webp'
 
-const loading =()=>{
-    return <div 
+const Loading =()=>{
+
+  const [load,setLoading] = useState(false)
+    
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(true);
+    }, 20000);
+
+    // Cleanup timer when component unmounts
+    return () => clearTimeout(timer);
+  }, []);
+  
+    return <> {!load?  <div 
     style={{textAlign:"center",marginTop:"10%"}}>
     <img width={200} src={LoadingImg}/>
     <h3>  Loading....</h3>
-  </div>
+  </div> :  <h3 style={{
+    textAlign:"center",
+    backgroundColor:"red",
+    color:"white",
+    padding:10,
+    }}> Server Error:( Failed To Fetch)</h3>}
+  </>
 }
-export default loading
+export default Loading

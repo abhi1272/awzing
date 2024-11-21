@@ -102,16 +102,16 @@ const isScreenSmall = ()=> {
   return ( 
     <>
    
-    {loading? <Loadingt/>:(  
+  
       <div >
-        {/* <MobileMenu/> */}
     <CarouselHome/>
     {renAc()}
     <h1 style={{textAlign:"center", }}>Products Categories</h1>
+    {loading? <Loadingt/>:(  
    <div style={{justifyContent:"center"}} className= {isScreenSmall()? "allCatCardMobile" :"allCatCard"}>
-   
    {renCatT()}
-   </div>
+   </div>)
+   }
    <ContactBanner/>
    {renTAc()}
    
@@ -120,8 +120,7 @@ const isScreenSmall = ()=> {
   
 
   
-   </div>)
-   }
+   </div>
  </>
   )
 }

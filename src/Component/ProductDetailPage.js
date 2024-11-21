@@ -52,7 +52,7 @@ const ProductDetailPage = ()=>{
         window.location.reload()
     }
     const showRelatedProduct = ()=>{
-        return relatedPro.map(related => 
+        return  relatedPro.map(related => 
         <CategoriesCard
         key={related.uuid}
         id={related.uuid}
