@@ -1,4 +1,4 @@
-const baseUrl =  "http://localhost:3000"
+const baseUrl =  "https://api.bidzbay.com/api/ps/v1"
 
 export const fetcher = async (workUrl)=>{
  try {

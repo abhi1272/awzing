@@ -47,7 +47,7 @@
 
 .allCatCard{
     display: grid;
-    grid-template-columns: repeat(4,21%);
+    grid-template-columns: repeat(4,24%);
 }
 .allProductCatCard{
     grid-template-columns: repeat(1,100%);
@@ -58,7 +58,12 @@
 }
 .allProductsShow{
     display: grid;
-    grid-template-columns: repeat(4,320px);
+    grid-template-columns: repeat(4,25%);
+
+}
+.allProductsShowTab{
+    display: grid;
+    grid-template-columns: repeat(2,320px);
 
 }
 
@@ -155,7 +160,7 @@
 
 /* product Details Page */
 .mainDivProduct{
-    margin: 50px;
+    margin: 30px;
 }
 .mainDivProductMobile{
     margin: 10px;
@@ -220,7 +225,7 @@
 
 .productPage{
     display: grid;
-    grid-template-columns: 800px 500px;
+    grid-template-columns: 60% 40%;
 }
 
 .productImgMobile{

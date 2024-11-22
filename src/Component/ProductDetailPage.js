@@ -65,7 +65,7 @@ const ProductDetailPage = ()=>{
     }
 
     const isScreenSmall = ()=>{
-        return window.innerWidth <=768
+        return window.innerWidth <=900
     }
     return (
 

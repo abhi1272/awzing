@@ -35,7 +35,7 @@ const MobileMenu = ()=>{
 
       
     return  <div>
-     <div style={{marginLeft:"100px"}}>
+     <div style={{position:"absolute",right:10,top:40}}>
         <button style={{
             zIndex:"12000",
             backgroundColor:"transparent",

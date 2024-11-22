@@ -99,6 +99,9 @@ const renTAc = ()=>{
    
 const isScreenSmall = ()=> {
   return window.innerWidth <= 768}
+  const isMedSmall = ()=>{
+    return window.innerWidth <=900
+}
   return ( 
     <>
    
@@ -108,7 +111,7 @@ const isScreenSmall = ()=> {
     {renAc()}
     <h1 style={{textAlign:"center", }}>Products Categories</h1>
     {loading? <Loadingt/>:(  
-   <div style={{justifyContent:"center"}} className= {isScreenSmall()? "allCatCardMobile" :"allCatCard"}>
+   <div style={{justifyContent:"center"}} className= {isScreenSmall()? "allCatCardMobile" :  isMedSmall()? "allProductsShowTab": "allCatCard"}>
    {renCatT()}
    </div>)
    }

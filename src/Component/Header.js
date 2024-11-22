@@ -13,7 +13,7 @@ const Header = ()=>{
     const navigate = useNavigate();
     const [searchShow,setSearchShow] = useState(false)
     const isScreenSmall = ()=> {
-        return window.innerWidth <= 768}
+        return window.innerWidth <= 900}
 
         const setDisplay = ()=>{
             setSearchShow(true);

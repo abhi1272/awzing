@@ -48,7 +48,7 @@ const CarouselHome = ({imgs})=>{
       }
      
       const isScreenSmall = ()=> {
-        return window.innerWidth <= 768}
+        return window.innerWidth <= 900}
      return<>
       <div className="carousel-container-home">
       <div

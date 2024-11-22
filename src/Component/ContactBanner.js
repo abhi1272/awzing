@@ -4,7 +4,7 @@ import CallIcon from '@mui/icons-material/Call';
 import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
 const ContactBanner = ()=>{
     const isScreenSmall = ()=> {
-        return window.innerWidth <= 768}
+        return window.innerWidth <= 900}
     return <div className= {isScreenSmall()? "contactBannerMobile":"contactBanner"} >
         <h2> <SettingsSuggestIcon sx={{fontSize:"2rem"}}/> Providing Reliable Results You Can Trust</h2>
         <div className= {isScreenSmall()? "quoteBtnsMobile":"quoteBtns"} >
