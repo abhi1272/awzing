@@ -15,6 +15,7 @@ function App() {
  
   return (
    
+
       <div style={{height:"100%"}}>
         <Router>
         <Header/>
@@ -32,6 +33,7 @@ function App() {
         <Footer/>
      
         </div>
+    
   );
 }
 

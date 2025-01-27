@@ -49,7 +49,7 @@ const ProductDetailPage = ()=>{
    
     const openProduct = (id)=>{
         navigate(`/product/${id}` )
-        window.location.reload()
+        // window.location.reload()
     }
     const showRelatedProduct = ()=>{
         return  relatedPro.map(related => 
@@ -128,6 +128,9 @@ const ProductDetailPage = ()=>{
 <h2>Related Products</h2>
 <div className={isScreenSmall()? "allProductsShowMobile" :"allProductsShow"}>
 {showRelatedProduct()}
+</div>
+<h2>Comment Section</h2>
+<div className={isScreenSmall()? "allProductsShowMobile" :"allProductsShow"}>
 </div>
 </div>
 

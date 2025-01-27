@@ -60,7 +60,7 @@ const CarouselHome = ({imgs})=>{
                 <img 
                 key={index}
                 src= {img} 
-                alt= {`image ${index+1}`} 
+                alt= "images"
                 className={ isScreenSmall()?  "carousel-image-home-mobile" : "carousel-image-home"}
                  />
                 
