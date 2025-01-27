@@ -22,7 +22,7 @@ const LoginPage = () => {
     setError('');
     setLoading(true)
     try {
-      const response = await fetch('https://auth.bidzbay.com/api/as/v1/users/login', {
+      const response = await fetch('https://users.techmavericks.in.net/api/as/v1/users/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

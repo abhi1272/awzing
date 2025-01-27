@@ -10,7 +10,7 @@ const AddProduct = () => {
     const formData = new FormData(form)
     const userToken = sessionStorage.getItem('token')
     try {
-      const response = await fetch('http://localhost:3000/products/', {
+      const response = await fetch('https://api.techmavericks.in.net/api/ps/v1/products/', {
         method: 'POST',
         headers: {
           'Authorization':  `Bearer ${userToken}`
