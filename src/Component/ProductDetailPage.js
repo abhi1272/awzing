@@ -67,6 +67,7 @@ const ProductDetailPage = ()=>{
     const isScreenSmall = ()=>{
         return window.innerWidth <=900
     }
+
     return (
 
       <>
@@ -74,7 +75,7 @@ const ProductDetailPage = ()=>{
         
         <div className={isScreenSmall()? 'mainDivProductMobile'  : 'mainDivProduct'} >
 
-            <Banner bannerTitle={result? result.title:"Loading"}/>
+            <Banner bannerTitle={category? category.name : "Loading"}/>
             {loading? <LoadingT/>: (
 <div className= {isScreenSmall()? 'productPageMobile':'productPage'}>
 <div className= {isScreenSmall()? 'productImgMobile':'productImg'}>
@@ -129,7 +130,6 @@ const ProductDetailPage = ()=>{
 <div className={isScreenSmall()? "allProductsShowMobile" :"allProductsShow"}>
 {showRelatedProduct()}
 </div>
-<h2>Comment Section</h2>
 <div className={isScreenSmall()? "allProductsShowMobile" :"allProductsShow"}>
 </div>
 </div>

@@ -2,6 +2,7 @@ import React  from "react";
 import { useState,useEffect } from "react";
 import "./Carousel.css";
 import Search from "./Search";
+import Noimage from "../Imgs/noimagemed.jpg"
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
@@ -15,11 +16,12 @@ const CarouselHome = ({imgs})=>{
 
     const [images,setimages]= useState([])
 
-    
+    const imgg = imgs&&`${imgs[0]}`.includes("bidzbay")
+
 
    
     useEffect(() => {
-        setimages(imgs? imgs :image)
+        setimages(imgs ? imgg?  [Noimage] :imgs : image)
 
        
         const interval = !imgs && setInterval(() => {
