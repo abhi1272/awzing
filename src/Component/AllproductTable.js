@@ -41,10 +41,26 @@ const AllproductTable = ()=>{
         window.location.reload()
     }
 
+    const renderCardMobile = ()=> {
+        return result && result.map( (cat ,index) => {
+            return <> <AllProductCard
+            key={cat.id+1}
+            id={cat.id}
+            mrp={cat ?cat.price: ""}
+            packing={cat.specifications ? cat.specifications.packing:""}
+            productDetail={cat.specifications ? cat.specifications.composition:""}
+            catName={cat ? cat.title:""}
+        
+            />
+            <hr style={{border:"1px solid black"}}/>
+            </> 
+        } );
+    }
+
     const renCatT = ()=>{
       
         return result && result.map( (cat ,index) => (
-         
+         <>
             <tr key={index}>
             <td>{index + 1}</td>
             <td>{cat ? cat.title:""} </td>
@@ -52,7 +68,8 @@ const AllproductTable = ()=>{
             <td>{cat.specifications ? cat.specifications.packing:""} </td>
             <td>₹ {cat ?cat.price: ""} </td>
            </tr>
-       
+          
+           </>
         ));
     }
   
@@ -87,7 +104,9 @@ const AllproductTable = ()=>{
                     textAlign:"center",
                     padding:"10px"
                 }}>Awzing Heathcare Pvt. Ltd.</h2>
-                 { result && (
+                   <hr style={{border:"1px solid black"}}/>
+                {isScreenSmall()?  renderCardMobile() : 
+                  result && (
              <table className='table table-striped  table-bordered '>
                 <thead className='tblHead'>
                 <tr className='thead'>
@@ -99,12 +118,13 @@ const AllproductTable = ()=>{
                 </tr>
                </thead>
                <tbody>
-             {renCatT()}
+           {renCatT()}
               
                </tbody>
                 </table>
-                )}
-                 
+                
+                )
+            }
                  </div>
 
                 <div style={{

@@ -9,7 +9,7 @@ const AllProductCard =({id, catName,onCatClick,productDetail,mrp,packing,showBtn
 }
     return (
         
-    <div key={id} onClick={()=>onCatClick(id)} className={isScreenSmall()? 'allProductCatCardMobile' : 'allProductcardBody'} >
+    <div key={id}  className={isScreenSmall()? 'allProductCatCardMobile' : 'allProductcardBody'} >
         <div className='cardContent'>
             <h3> {catName.length > 50? catName.slice(0,50)+'...':catName}</h3>
              {productTxt.length > 100? "Composition: "+productTxt.slice(0,100)+'...': "Composition: " +productTxt || testTxt }
@@ -20,7 +20,7 @@ const AllProductCard =({id, catName,onCatClick,productDetail,mrp,packing,showBtn
         
         <div className='cardFooter'>
     
-          {showBtn && <button onClick={()=>onCatClick(id)}>View</button>}
+          {/* {showBtn && <button onClick={()=>onCatClick(id)}>View</button>} */}
         
         </div>
     </div>

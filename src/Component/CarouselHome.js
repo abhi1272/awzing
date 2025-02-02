@@ -10,8 +10,7 @@ const CarouselHome = ({imgs})=>{
     const [currentIndex, setCurrentIndex] = useState(0);
     const image = [ 
         "https://blogger.googleusercontent.com/img/a/AVvXsEiH0a3YbZNhDQThpoxJh5je-U-_HMW9PNzHGfQhZOqrNa3mSgmCMuixiK4_ahG67JHQqttuDqcNC2nlhWCX0CbZyL7Y1FZfwIK0t7WGpm_uP7SyO4AGpo-On6r35mckpL6euwY8sUhZnmiGl4JhgZ7fTKnQGSxnFYSYdDjx6T8Uy3xL-ECqGv77qNxqnV5d",
-        "https://plus.unsplash.com/premium_photo-1682089872205-dbbae3e4ba32?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://plus.unsplash.com/premium_photo-1661304713898-b6980743aa2a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "https://blogger.googleusercontent.com/img/a/AVvXsEhPWCw58fvMESEe7cbDkbjysoq4CwCP_Q6bEAExUtGMt_TyTIT4rcK6oERO0zbtzd07WryGTAYqg1J_2KNKAjHWrFfFUYpadX-MmxiGqdG2mTfKBolVT35z7HPo70TZoNRKB27_P0K8luONZLiE4SvWNZ2oqaryrEzh7MA81EunqMrGOhStTyJBOedKzK97",
     ]
 
     const [images,setimages]= useState([])
@@ -63,7 +62,7 @@ const CarouselHome = ({imgs})=>{
                 key={index}
                 src= {img} 
                 alt= "images"
-                className={ isScreenSmall()?  "carousel-image-home-mobile" : "carousel-image-home"}
+                className={ isScreenSmall()?  imgs? "carousel-image-deatilpage-mobile": "carousel-image-home-mobile" : imgs? "carousel-image-deatilpage": "carousel-image-home"}
                  />
                 
                 )
