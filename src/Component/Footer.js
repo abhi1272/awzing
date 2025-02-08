@@ -15,8 +15,8 @@ const Footer = ()=>{
        <div className="listsDiv">
         <ul>
             <li><MedicationIcon style={{fontSize:12}}/><a href="/">Home</a> </li>
-            <li><MedicationIcon style={{fontSize:12}}/>About Us</li>
-            <li><MedicationIcon style={{fontSize:12}}/>Contact Us</li>
+            <li><MedicationIcon style={{fontSize:12}}/><a href="/about-us">About Us</a></li>
+            <li><MedicationIcon style={{fontSize:12}}/><a href="tel:9135048439">Contact Us</a></li>
         </ul>
        </div>
        <div className="listsDiv">

@@ -10,6 +10,7 @@ import Footer from './Component/Footer';
 import Login from './Component/login';
 import AllproductTable from './Component/AllproductTable';
 import Folder from './Component/Folder'
+import Aboutus from './Component/AboutUs';
 function App() {
  
  
@@ -27,6 +28,7 @@ function App() {
           <Route path="/all-products" element={<AllproductTable/>} />
           <Route path="/folder" element={<Folder/>} />
           <Route path="/login" element={<Login/>} />
+          <Route path="/about-us" element={<Aboutus/>} />
         </Routes>
 
         </Router>

@@ -50,7 +50,7 @@ const Carousel = () => {
   
   return (
   <>
-     {loading? <LoadingT/> : 
+     {loading? <h2 style={{textAlign:"center"}} >loading...</h2> : 
     <div   key="111" className= {isSmallScreen()? "carousel-container-Mobile": "carousel-container"}>
       <div
       

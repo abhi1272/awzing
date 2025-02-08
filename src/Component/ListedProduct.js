@@ -4,7 +4,6 @@ import { fetcher } from "../fetcher";
 import CategoriesCard from './CategoriesCard'
 import { useNavigate } from "react-router-dom";
 import Banner from "./banner";
-import '../'
 
 const ListedProduct = ()=>{
     const navigate = useNavigate();
@@ -12,7 +11,7 @@ const ListedProduct = ()=>{
 
     useEffect(()=>{
         const fetchData = async()=>{
-        const data = await fetcher("/products/user/c05ebaf6-72e0-45f9-98cf-2934788f6577")
+        const data = await fetcher("/products/user/2088142f-e547-428c-b136-f5a3ac333732")
         setResult(data.data)
     }
     fetchData()

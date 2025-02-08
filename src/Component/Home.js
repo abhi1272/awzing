@@ -60,24 +60,13 @@ const Home = ()=>{
       title = "About Us"
       desc = "Awzing Healthcare pvt. ltd. is a pharmaceutical company headquartered at Panchkula(HR). Our main activities are focused on to improve the quality of life by providing better health services by developing and marketing quality and proprietary pharmaceutical product. Every molecule here is researched to trace the soul of happiness. Our significant achievements during the last few years have helped us build an Organization and infrastructure that has led Awzing to spread its wings. At Awzing, New and innovative business models are in motion to make the most of emerging opportunities. We aim to market high quality and affordable pharmaceuticals to be made available everywhere, everyday."
       img = "https://5.imimg.com/data5/SELLER/Default/2022/3/KF/CN/NG/22057608/whatsapp-image-2022-03-22-at-11-03-46.jpeg"
-      onAboutCardClick={()=>  navigate("/products")}
+      onAboutCardClick={()=>  navigate("/about-us")}
      
      />   
     
 }
 
-const renTAc = ()=>{
-  return <AboutCard 
-    key={21} 
-    cardLabel= "Third Party Pharma Manufacturing with Awzing"
-    title = "Hello World"
-    desc = "Awzing Healthcare pvt. ltd. is a pharmaceutical company headquartered at Panchkula(HR). Our main activities are focused on to improve the quality of life by providing better health services by developing and marketing quality and proprietary pharmaceutical product. Every molecule here is researched to trace the soul of happiness. Our significant achievements during the last few years have helped us build an Organization and infrastructure that has led Awzing to spread its wings. At Awzing, New and innovative business models are in motion to make the most of emerging opportunities. We aim to market high quality and affordable pharmaceuticals to be made available everywhere, everyday."
-    img = {Img2}
-    onAboutCardClick={()=>  navigate("/products")}
-   
-   />   
-  
-}
+
 
    const catProduct = ()=>{
     // return product.map( pro => 
@@ -110,13 +99,13 @@ const isScreenSmall = ()=> {
     <CarouselHome/>
     {renAc()}
     <h1 style={{textAlign:"center", }}>Products Categories</h1>
-    {loading? <Loadingt/>:(  
+    {loading? <h2 style={{textAlign:"center"}} >Loading....</h2>:(  
    <div style={{justifyContent:"center"}} className= {isScreenSmall()? "allCatCardMobile" :  isMedSmall()? "allProductsShowTab": "allCatCard"}>
    {renCatT()}
    </div>)
    }
    <ContactBanner/>
-   {renTAc()}
+   
    
    <h1 style={{textAlign:"center", }}>Our Products</h1>
    <Carousel/>
