@@ -11,7 +11,7 @@ import AboutCard from "./AboutCard";
 import ContactBanner from "./ContactBanner";
 import Img2 from '../Imgs/homeimg2.webp'
 import MobileMenu from "./MobileMenu";
-
+import { motion } from "framer-motion";
 
 const Home = ()=>{
  
@@ -39,17 +39,27 @@ const Home = ()=>{
 
   
    const renCatT = ()=>{
-       return result.map( cat => 
-        <CategoriesCard 
-        key={cat.uuid} 
-        id={cat.uuid} 
-        catName={cat.name}
-        image={cat.displayImage}
-        productDetail={cat.description}
-        showBtn={true}
-        onCatClick={(id)=>handleCatClick(id,cat.name)}
-        
-        />   
+       return  result.map( (cat, index) => (
+        <motion.div
+        initial={{opacity:0, x:-100}}
+        whileInView={{opacity:1, x:0}}
+        viewport={{once:false, amount:0.4}}
+        transition={{duration:0.5,delay: index * 0.1}}
+        > 
+              <CategoriesCard 
+              key={cat.uuid} 
+              id={cat.uuid} 
+              catName={cat.name}
+              image={cat.displayImage}
+              productDetail={cat.description}
+              showBtn={true}
+              onCatClick={(id)=>handleCatClick(id,cat.name)}
+              
+              />   
+        </motion.div>
+      
+       )
+       
        )
    }
 
@@ -97,7 +107,10 @@ const isScreenSmall = ()=> {
   
       <div >
     <CarouselHome/>
-    {renAc()}
+
+    
+   {renAc()}
+ 
     <h1 style={{textAlign:"center", }}>Products Categories</h1>
     {loading? <h2 style={{textAlign:"center"}} >Loading....</h2>:(  
    <div style={{justifyContent:"center"}} className= {isScreenSmall()? "allCatCardMobile" :  isMedSmall()? "allProductsShowTab": "allCatCard"}>

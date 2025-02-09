@@ -12,6 +12,7 @@ const Footer = ()=>{
         <p><CallIcon style={{fontSize:12}}/> 9135048439</p>
        </div>
        </div>
+       <div className="allMenu">
        <div className="listsDiv">
         <ul>
             <li><MedicationIcon style={{fontSize:12}}/><a href="/">Home</a> </li>
@@ -26,6 +27,8 @@ const Footer = ()=>{
             
         </ul>
        </div>
+       </div>
+       
         </div>
 }
 export default Footer
