@@ -13,7 +13,7 @@ const AboutCard = ({title,desc,img,cardLabel,onAboutCardClick})=>{
   whileInView={{opacity:1, x:0}}
   viewport={{once:false,amount: 0.4}}
   transition={{duration:0.5}}
- className="p-5 bg-green-500 text-white text-center rounded-lg">
+>
     <div className= {isScreenSmall()? "aboutDivContentMobile":"aboutDivContent"}>
     <h3>{cardLabel}</h3>
     <h1>{title}</h1>
@@ -23,11 +23,11 @@ const AboutCard = ({title,desc,img,cardLabel,onAboutCardClick})=>{
     </motion.div>
 
     <motion.div 
-  initial={{opacity:0, x:100}}
+  initial={{opacity:0, x:1}}
   whileInView={{opacity:1, x:0}}
   viewport={{once:false,amount: 0.4}}
   transition={{duration:0.5}}
- className="p-5 bg-green-500 text-white text-center rounded-lg">
+>
 
 <div   className={isScreenSmall()? "aboutCardImgMobile" : "aboutCardImg"}>
         <img src={img}/>

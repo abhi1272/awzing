@@ -1,7 +1,7 @@
 import React from  "react"
 import Circles from "./Circles";
 import { fetcher } from "../fetcher";
-import { useNavigate } from "react-router-dom";
+import { json, useNavigate } from "react-router-dom";
 import { useState,useEffect, } from "react"
 
 
@@ -10,13 +10,13 @@ const Categories = ({color})=>{
 
   const navigate = useNavigate();
   const [result,setResult] = useState([])
-  
+  const localdata = JSON.parse(localStorage.getItem("categories"))
+
        useEffect( ()=>{
-      const fetchData = async ()=>{
-      const data = await fetcher("/categories")
-      setResult(data.data)
-      }
-      fetchData()
+        if(localdata){
+          setResult(JSON.parse(localStorage.getItem("categories")))
+       }
+     
       }, [])
 
       const handleCatClick = (id,catname) =>{
@@ -66,7 +66,7 @@ const Categories = ({color})=>{
      
       onClick={()=> navigate("/folder")}
       >Folder</button> 
-    {result.map(catt =>{
+    { result.map(catt =>{
       return   <button 
       style={{ 
        margin:"10px",

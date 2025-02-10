@@ -18,18 +18,21 @@ const Home = ()=>{
   const [result,setResult] = useState([])
   const [loading,setLoading] = useState(true)
   const navigate = useNavigate();
-
-  useEffect( ()=>{
-    const fetch = async ()=>{
-      const data = await fetcher("/categories")
-      setResult(data.data)
-      setLoading(false)
-
+  const localdata = JSON.parse(localStorage.getItem("categories"))
+  useEffect(()=>{
+    const setLocal =()=>{
+      if(localdata){
+         setResult(JSON.parse(localStorage.getItem("categories")))
+        setLoading(false)
+      }
+     
     }
-       
-    fetch()
-   
-   }, [])
+    
+
+    setLocal()
+ 
+  },[])
+  
 
    const apiuri =  '","'+ "location.city"+'":"'+"Patna"+'","'+"location.state"+'":"'+"Bihar"+'","'+"location.country"+'":"'+"India"+'"}'
 

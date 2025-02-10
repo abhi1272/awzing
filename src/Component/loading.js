@@ -16,8 +16,11 @@ const Loading =()=>{
   }, []);
   
     return <> {!load?  <div 
-    style={{textAlign:"center",marginTop:"10%"}}>
-    <img width={200} src={LoadingImg}/>
+    style={{textAlign:"center",
+    marginTop:"10%",
+    height:"100vh",
+    justifyContent:"center"}}>
+    <img width={200} src={LoadingImg} alt='loading img'/>
     <h3>  Loading....</h3>
   </div> :  <h3 style={{
     textAlign:"center",
