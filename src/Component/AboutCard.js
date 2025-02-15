@@ -9,7 +9,7 @@ const AboutCard = ({title,desc,img,cardLabel,onAboutCardClick})=>{
  return( 
 <div className= {isScreenSmall()? "AboutCardMobile" :"AboutCard"}>
 <motion.div 
-  initial={{opacity:0, x:1}}
+  initial={{opacity:0, x:-100}}
   whileInView={{opacity:1, x:0}}
   viewport={{once:false,amount: 0.4}}
   transition={{duration:0.5}}
@@ -23,7 +23,7 @@ const AboutCard = ({title,desc,img,cardLabel,onAboutCardClick})=>{
     </motion.div>
 
     <motion.div 
-  initial={{opacity:0, x:50}}
+  initial={{opacity:0, x:1}}
   whileInView={{opacity:1, x:0}}
   viewport={{once:false,amount: 0.4}}
   transition={{duration:0.5}}
