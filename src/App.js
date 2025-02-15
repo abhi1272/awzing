@@ -36,9 +36,10 @@ function App() {
    
 
       <div style={{height:"100%"}}>
+          {localdata? <Loading/>:
         <Router>
         <Header/>
-        {localdata? <Loading/>:  <Routes>
+        <Routes>
           <Route path="/" element={<Dashboard/>} />
           <Route path="/products" element={<Products/>} />
           <Route path="/product/:id" element={<ProductsDetailPage/>} />
@@ -46,10 +47,10 @@ function App() {
           <Route path="/folder" element={<Folder/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/about-us" element={<Aboutus/>} />
-        </Routes>}
+        </Routes>
        
 
-        </Router>
+        </Router>}
         <Footer/>
      
         </div>
