@@ -1,0 +1,28 @@
+{
+    "tag": [],
+    "uuid": "c19e4872-4068-4c7c-a2c8-963e8f144b6c",
+    "name": "Syrup",
+    "displayName": "Syrup",
+    "fields": [
+      {
+        "options": [],
+        "_id": "66bcb3e685d8e2e4531ef1ci",
+        "name": "composition",
+        "displayName": "Composition",
+        "type": "text",
+        "required": false,
+        "size": 500
+      },
+      {
+        "options": [],
+        "_id": "66bcb3e685d8e2e4531ef1ci",
+        "name": "packing",
+        "displayName": "Packing",
+        "type": "text",
+        "required": false,
+        "size": 50
+      }
+    
+    ],
+    "active": true
+  }
