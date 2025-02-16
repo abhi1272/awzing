@@ -41,7 +41,7 @@ const catProduct = ()=>{
             const isScreenSmall = ()=>{
                 return window.innerWidth <= 768
             }
-    return <div className="addProductDev">
+    return <div className="listProductDev">
         <Banner bannerTitle= {result? "Listed Product": "No Listed Product Found"}/>
         <div  style={{justifyContent:"center"}} className= {isScreenSmall()? "allProductsShowMobile" :"allProductsShow"}>
         {result && catProduct()}

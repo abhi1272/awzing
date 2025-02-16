@@ -62,35 +62,31 @@ const AddProduct = () => {
 
   return (
     <div className='addProductDev'>
-      <Banner bannerTitle="Add Product"/>
-      <form className='loginForm' id='addProductForm'> <br/>
-        <input type='text' placeholder='Title' name='title' /> <br/>
-        <textarea rows="4" cols="50" placeholder='Description' name='description' /><br/>
-        <textarea rows="4" cols="50" placeholder='Composition' name='specifications.composition' /><br/>
-        <input type='text' placeholder='Packing' name='specifications.packing' /> <br/>
-        <input type='number' placeholder='Price' name='price' /><br/> 
-        <input style={{display:"none"}} type='text' placeholder='Country' name='location.country' value="INDIA" />
-        <input style={{display:"none"}} type='text' placeholder='City' name='location.city' value="INDIA"/>
-        <input style={{display:"none"}} type='text' placeholder='State' name='location.state' value="Bihar"/>
-        <select onChange={(e) => showSubCat(e) } id="category" name="category.uuid">
-          <option>none</option>
-          {!categories? <option>none</option> :categories.map(category =>(
-           <option key={category.uuid} value={category.uuid}>{category.name}</option>
-           ))}
-        </select> <br/>
-
-        {subCat  && <select required id="subcategory" name="subcategory.uuid"> 
-          {subCat.map(sub =>(
-           <option  key={sub.uuid} value={sub.uuid}>{sub.name}</option>
-           ))}
-        </select>} <br/>
-        <input style={{display:"none"}}  type='text' value={catName? catName:"none"} placeholder='category.name' name='category.name' />
-        <input style={{display:"none"}}  type='number' placeholder='phone number' name='Phone_number' />
-        <input type='file' name='images' multiple /><br/> {/* Adding file input */}
-      
-        <button   className='loginBtn' type="button" onClick={onSubmit}>Submit</button><br/>
-      </form>
-    </div>
+    <Banner bannerTitle="Add Product" />
+    <form className='addProductForm' id='addProductForm'>
+      <input type='text' placeholder='Title' name='title' />
+      <textarea rows="4" cols="50" placeholder='Description' name='description' />
+      <textarea rows="4" cols="50" placeholder='Composition' name='specifications.composition' />
+      <input type='text' placeholder='Packing' name='specifications.packing' />
+      <input type='number' placeholder='Price' name='price' />
+      <select onChange={(e) => showSubCat(e)} id="category" name="category.uuid">
+        <option>none</option>
+        {!categories ? <option>none</option> : categories.map(category => (
+          <option key={category.uuid} value={category.uuid}>{category.name}</option>
+        ))}
+      </select>
+      {subCat && (
+        <select required id="subcategory" name="subcategory.uuid">
+          {subCat.map(sub => (
+            <option key={sub.uuid} value={sub.uuid}>{sub.name}</option>
+          ))}
+        </select>
+      )}
+      <input type='file' name='images' multiple />
+      <button className='submitBtn' type="button" onClick={onSubmit}>Submit</button>
+    </form>
+  </div>
+  
   )
 }
 
