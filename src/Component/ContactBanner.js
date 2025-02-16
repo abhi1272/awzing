@@ -12,7 +12,7 @@ const ContactBanner = ()=>{
         <button className={isScreenSmall()? "quoteBtn2Mobile":"quoteBtn2"}> <CallIcon sx={{
             alignItems:"center",
             fontSize:"0.6rem"
-        }}/> +91 9135048439</button>
+        }}/> +91 8210921102</button>
         </div>
        
     </div>

@@ -9,7 +9,7 @@ const Footer = ()=>{
        <img src={logo} width={200}/>
        <div className="webDetails">
         <p>Working together for a healthier world.</p>
-        <p><CallIcon style={{fontSize:12}}/> 9135048439</p>
+        <p><CallIcon style={{fontSize:12}}/> 8210921102</p>
        </div>
        </div>
        <div className="allMenu">
